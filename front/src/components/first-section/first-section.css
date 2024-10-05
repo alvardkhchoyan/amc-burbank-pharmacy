@@ -1,0 +1,117 @@
+.general-first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  padding: 10px;
+  gap: 50px;
+  min-height: 50vh;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.title {
+  color: rgb(32, 153, 83);
+  font-size: 44px;
+  margin-bottom: 20px;
+  animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+.description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  animation: fadeInLeft 1.5s ease-out;
+}
+
+.action-button {
+  background-color: rgb(32, 153, 83);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #dfcc9e;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(223, 204, 158, 0.7);
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.home-picture {
+  width: 800px;
+  border-radius: 150px 150px;
+  border: 1px solid rgb(32, 153, 83);
+  animation: fadeInRight 1.5s ease-out;
+  object-fit: cover; /* Ensures the image fills the container beautifully */
+  max-width: 100%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .home-picture {
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .general-first-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .home-picture {
+    width: 100%; /* Full width of the container */
+    max-width: 400px; /* Ensures it's not too big */
+    border-radius: 50px; /* Reduce border-radius for a more subtle look */
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .action-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-picture {
+    width: 100%;
+    max-width: 300px; /* Keeps the image a reasonable size on small screens */
+    border-radius: 30px; /* Further reduce border-radius on smaller screens */
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .action-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

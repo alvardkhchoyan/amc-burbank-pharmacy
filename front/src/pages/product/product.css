@@ -1,0 +1,342 @@
+.product-page {
+  margin-top: 82px;
+  align-items: center;
+  width: 100%;
+}
+
+.product-first-section,
+.product-second-section,
+.product-third-section,
+.product-fourth-section {
+  display: flex;
+  gap: 180px; /* Space between text and image */
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.product-first-section {
+  background-color: rgb(
+    32,
+    153,
+    83
+  ); /* Background color for the first section */
+}
+
+.product-second-section {
+  background-color: white; /* Background color for the second section */
+}
+
+.product-third-section {
+  background-color: #f7f7f7; /* Background color for the third section */
+}
+
+.product-fourth-section {
+  background-color: white; /* Background color for the fourth section */
+}
+
+.product-text {
+  max-width: 500px;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  animation: fadeInText 2s ease-in-out;
+}
+
+.product-text h2 {
+  font-size: 24px; /* Adjusted font size for consistency */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #dfcc9e; /* Decorative underline */
+  padding-bottom: 5px;
+}
+
+.product-text p {
+  font-size: 14px; /* Reduced font size for consistency */
+  line-height: 1.6;
+}
+
+.product-image {
+  width: 350px; /* Image width */
+  height: auto;
+  animation: slideInRight 2s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Hover effect */
+}
+
+/* Color classes for different sections */
+.text-color-1 {
+  color: #dfcc9e; /* Color for the first section text */
+}
+
+.text-color-2 {
+  color: #333; /* Color for the second section text */
+}
+
+.text-color-3 {
+  color: #555; /* Color for the third section text */
+}
+
+.text-color-4 {
+  color: #444; /* Color for the fourth section text */
+}
+
+.product-fifth-section {
+  display: flex;
+  gap: 180px; /* Space between text and image */
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  width: 100%;
+  background-color: #f7f7f7; /* Background color similar to third section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Animation for text */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation for image */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.product-sixth-section {
+  display: flex;
+  gap: 180px; /* Space between text and image */
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  width: 100%;
+  background-color: white; /* Background color similar to fourth section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.description-for-product {
+  font-size: 20px !important;
+}
+
+.product-title {
+  font-size: 30px !important;
+}
+
+.product-page {
+  margin-top: 82px;
+  align-items: center;
+  width: 100%;
+}
+
+/* General section styling */
+.product-first-section,
+.product-second-section,
+.product-third-section,
+.product-fourth-section,
+.product-fifth-section,
+.product-sixth-section {
+  display: flex;
+  gap: 180px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Text first, image below it on smaller screens */
+@media (max-width: 768px) {
+  .product-first-section,
+  .product-second-section,
+  .product-third-section,
+  .product-fourth-section,
+  .product-fifth-section,
+  .product-sixth-section {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center the content for smaller screens */
+  }
+
+  /* Ensure text is first and centered */
+  .product-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  /* Responsive image styling */
+  .product-image {
+    width: 90%; /* Images take up 90% of the width on mobile */
+    max-width: 350px;
+    height: auto;
+  }
+
+  /* Adjust spacing for better flow */
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .description-for-product {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+/* Default larger screen behavior */
+.product-text {
+  max-width: 500px;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+}
+
+.product-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #dfcc9e;
+  padding-bottom: 5px;
+}
+
+.product-text p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.product-image {
+  width: 350px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Maintain different background colors for each section */
+.product-first-section {
+  background-color: rgb(32, 153, 83);
+}
+
+.product-second-section {
+  background-color: white;
+}
+
+.product-third-section {
+  background-color: #f7f7f7;
+}
+
+.product-fourth-section {
+  background-color: white;
+}
+
+.product-fifth-section {
+  background-color: #f7f7f7;
+}
+
+.product-sixth-section {
+  background-color: white;
+}
+
+
+/* General layout for larger screens */
+.product-first-section,
+.product-second-section,
+.product-third-section,
+.product-fourth-section,
+.product-fifth-section,
+.product-sixth-section {
+  display: flex;
+  gap: 180px; /* Space between text and image */
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .product-first-section,
+  .product-second-section,
+  .product-third-section,
+  .product-fourth-section,
+  .product-fifth-section,
+  .product-sixth-section {
+    flex-direction: column; /* Arrange content vertically */
+    gap: 20px; /* Reduce gap between elements */
+    align-items: center; /* Center-align content */
+  }
+
+  /* Ensure text appears first */
+  .product-text {
+    text-align: center;
+    max-width: 100%;
+    order: 1; /* Ensure text appears before the image */
+  }
+
+  /* Responsive image styling */
+  .product-image {
+    width: 90%; /* Adjust image size on mobile */
+    max-width: 350px;
+    height: auto;
+    order: 2; /* Ensure image appears after the text */
+  }
+
+  /* Adjust font size for mobile readability */
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .description-for-product {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+/* Styling for larger screens */
+.product-text {
+  max-width: 500px;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+}
+
+.product-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #dfcc9e;
+  padding-bottom: 5px;
+}
+
+.product-text p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.product-image {
+  width: 350px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,77 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.location-section {
+  margin-top: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.location-title {
+  font-size: 2rem;
+  color: #209953;
+  margin-bottom: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.location-title:hover {
+  color: #176b3c;
+  transform: translateY(-5px);
+}
+
+.location-description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 30px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.location-description:hover {
+  transform: scale(1.05);
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .location-title {
+    font-size: 1.75rem;
+  }
+
+  .location-description {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-section {
+    padding: 0 10px;
+  }
+
+  .location-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .location-description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .location-description {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+}
