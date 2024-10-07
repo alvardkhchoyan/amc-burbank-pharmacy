@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import emailjs from "emailjs-com";
+import axios from "axios"; 
 import "./contactForm.css";
 
 const ContactForm: React.FC = () => {
@@ -23,7 +23,6 @@ const ContactForm: React.FC = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isError, setIsError] = useState(false);
 
-  // Validation functions for email and phone
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -34,7 +33,6 @@ const ContactForm: React.FC = () => {
     return phoneRegex.test(phone);
   };
 
-  // Validation of the form fields
   const validateFields = () => {
     const newErrors = {
       firstName: "",
@@ -47,29 +45,24 @@ const ContactForm: React.FC = () => {
     if (!formData.firstName.trim()) {
       newErrors.firstName = "First Name is required";
     }
-
     if (!formData.lastName.trim()) {
       newErrors.lastName = "Last Name is required";
     }
-
     if (!formData.email.trim()) {
       newErrors.email = "Email is required";
     } else if (!validateEmail(formData.email)) {
       newErrors.email = "Invalid email format";
     }
-
     if (!formData.phone.trim()) {
       newErrors.phone = "Phone Number is required";
     } else if (!validatePhoneNumber(formData.phone)) {
       newErrors.phone = "Invalid phone number format";
     }
-
     if (!formData.message.trim()) {
       newErrors.message = "Message is required";
     }
 
     setErrors(newErrors);
-
     return Object.values(newErrors).every((error) => error === "");
   };
 
@@ -77,14 +70,13 @@ const ContactForm: React.FC = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { id, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
+    setFormData({
+      ...formData,
       [id]: value,
-    }));
+    });
   };
 
-  // EmailJS integration to send the form data via email
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!validateFields()) {
@@ -94,46 +86,27 @@ const ContactForm: React.FC = () => {
       return;
     }
 
-    const templateParams = {
-      firstName: formData.firstName,
-      lastName: formData.lastName,
-      email: formData.email,
-      phone: formData.phone,
-      message: formData.message,
-    };
-
-    emailjs
-      .send(
-        "your_service_id",  // Replace with your EmailJS service ID
-        "your_template_id",  // Replace with your EmailJS template ID
-        templateParams,
-        "your_user_id"       // Replace with your EmailJS user ID
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          setPopupMessage("Email sent successfully!");
-          setIsError(false);
-          setFormData({
-            firstName: "",
-            lastName: "",
-            email: "",
-            phone: "",
-            message: "",
-          });
-        },
-        (err) => {
-          console.log("FAILED...", err);
-          setPopupMessage("Failed to send the message.");
-          setIsError(true);
-        }
-      )
-      .finally(() => {
-        setIsPopupVisible(true);
+    try {
+      await axios.post(`${process.env.REACT_APP_API_URL}/send-contact-email`, formData);
+      setPopupMessage("Email sent successfully!");
+      setIsError(false);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
       });
+    } catch (error) {
+      setPopupMessage(
+        "Failed to send the message. Please try again later."
+      );
+      setIsError(true);
+    } finally {
+      setIsPopupVisible(true);
+    }
   };
 
-  // Popup visibility timer
   useEffect(() => {
     if (isPopupVisible) {
       const timer = setTimeout(() => {
@@ -152,7 +125,6 @@ const ContactForm: React.FC = () => {
         </div>
       )}
       <form className="contact-form" onSubmit={handleSubmit}>
-        {/* Form fields */}
         <div className="form-row">
           <div className="form-group-contact">
             <label htmlFor="firstName">First Name</label>
@@ -164,9 +136,7 @@ const ContactForm: React.FC = () => {
               onChange={handleChange}
               className={errors.firstName ? "input-error" : ""}
             />
-            {errors.firstName && (
-              <p className="error-text">{errors.firstName}</p>
-            )}
+            {errors.firstName && <p className="error-text">{errors.firstName}</p>}
           </div>
           <div className="form-group-contact">
             <label htmlFor="lastName">Last Name</label>
@@ -207,20 +177,18 @@ const ContactForm: React.FC = () => {
             {errors.phone && <p className="error-text">{errors.phone}</p>}
           </div>
         </div>
-        <div className="form-group-contact">
+        <div className="form-group-contact full-width">
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
-            placeholder="Write your message..."
+            placeholder="Your message"
             value={formData.message}
             onChange={handleChange}
             className={errors.message ? "input-error" : ""}
-          />
+          ></textarea>
           {errors.message && <p className="error-text">{errors.message}</p>}
         </div>
-        <button type="submit" className="send-message-button">
-          Send Message
-        </button>
+        <button type="submit" className="submit-button">Submit</button>
       </form>
     </div>
   );

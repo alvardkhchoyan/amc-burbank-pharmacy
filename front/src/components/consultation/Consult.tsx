@@ -12,6 +12,7 @@ const Consult: React.FC = () => {
     country: "",
     message: "",
   });
+
   const [errors, setErrors] = useState({
     firstName: "",
     lastName: "",
@@ -20,17 +21,21 @@ const Consult: React.FC = () => {
     country: "",
     message: "",
   });
+
   const [popupMessage, setPopupMessage] = useState<string | null>(null);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isError, setIsError] = useState(false);
+
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
+
   const validatePhoneNumber = (phoneNumber: string) => {
     const phoneRegex =/^(\+1[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$/;
     return phoneRegex.test(phoneNumber);
   };
+
   const validateFields = () => {
     const newErrors = {
       firstName: "",
@@ -40,6 +45,7 @@ const Consult: React.FC = () => {
       country: "",
       message: "",
     };
+
     if (!consultationInfo.firstName.trim()) {
       newErrors.firstName = "First Name is required";
     }
@@ -65,6 +71,7 @@ const Consult: React.FC = () => {
     setErrors(newErrors);
     return Object.values(newErrors).every((error) => error === "");
   };
+  
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
