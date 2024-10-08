@@ -1,6 +1,5 @@
 import React from "react";
 import ContactInformation from "../ContactInformation/ContactInformation";
-import ContactForm from "../ContactForm/ContactForm";
 import "./contactUsSection.css";
 
 const ContactUsSection = () => {
@@ -12,7 +11,6 @@ const ContactUsSection = () => {
       </p>
       <div className="contact-us-content">
         <ContactInformation />
-        <ContactForm />
       </div>
     </div>
   );
