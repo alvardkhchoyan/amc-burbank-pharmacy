@@ -1,4 +1,5 @@
 import instagramLogo from "../../assets/instagramLogo.png";
+import TikTokLogo from "../../assets/TikTokLogo.png"
 import locationIcon from "./../../icon/location.png";
 import phoneIcon from "./../../icon/phone.png";
 import emailIcon from "./../../icon/email.png";
@@ -75,7 +76,7 @@ const Footer: React.FC = () => {
 
         <div className="footer-social">
           <h3>Social Media</h3>
-          <span>
+          <span className="socicalMedia">
             <a
               href="https://www.instagram.com/amcburbankpharmacy?igsh=MWhtdzlsN3p0cnh5cQ=="
               target="_blank"
@@ -87,19 +88,22 @@ const Footer: React.FC = () => {
                 className="footer-social-icon"
               />
             </a>
+            <a
+              href="https://www.tiktok.com/@amc.burbank.pharmacy?_t=8q7qms7W3cN&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={TikTokLogo}
+                alt="TikTok"
+                className="footer-social-icon"
+              />
+            </a>
           </span>
         </div>
       </div>
       <div className="footer-bottom">
         <p>&copy; 2024 All rights reserved.</p>
-        <div className="footer-bottom-links">
-          <a href={ROUTES.TERMS} target="_blank" rel="noopener noreferrer">
-            Terms of Service
-          </a>
-          <a href={ROUTES.PRIVACY} target="_blank" rel="noopener noreferrer">
-            Privacy Policy
-          </a>
-        </div>
       </div>
     </footer>
   );
