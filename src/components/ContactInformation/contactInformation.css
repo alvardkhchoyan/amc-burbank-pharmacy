@@ -9,6 +9,7 @@
   z-index: -1;
 }
 
+
 .background-image {
   width: 100%;
   height: 100%;
@@ -22,6 +23,7 @@
   color: #dfcc9e;
   border-radius: 10px;
 }
+
 
 .contact-details {
   margin-top: 20px;
@@ -48,6 +50,7 @@
   width: 24px;
   height: 24px;
 }
+
 
 .clock-icon {
   margin-right: 10px;
@@ -90,6 +93,14 @@
   font-weight: bold;
 }
 
+
+
+.instagram-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
 .social-media-link {
   justify-content: start;
 }
@@ -99,12 +110,6 @@
   display: flex;
   align-items: center;
   color: #ffffff;
-}
-
-.instagram-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
 }
 
 .instagram-text {
