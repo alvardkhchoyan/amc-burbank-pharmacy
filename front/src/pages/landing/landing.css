@@ -1,18 +1,23 @@
 /* Flexbox layout to space components evenly */
 .landing-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Adjust this for the desired spacing between sections */
-    padding: 0 20px; /* Optional horizontal padding */
-    width: 100%;
-  }
-  
-  .section {
-    padding-top: 20px; /* Additional top padding to avoid sections looking cramped */
-  }
-  
-  /* Optional background color for testing purposes */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust this for the desired spacing between sections */
+  padding: 0 20px; /* Optional horizontal padding */
+  width: 100%;
+}
+
+.section {
+  padding-top: 20px; /* Additional top padding to avoid sections looking cramped */
+}
+
+/* Optional background color for testing purposes */
+.landing-container {
+  background-color: #f0f0f0; /* Test to ensure CSS file is loaded */
+}
+
+@media (max-width: 768px) {
   .landing-container {
-    background-color: #f0f0f0; /* Test to ensure CSS file is loaded */
+    margin-left: -5%;
   }
-  
+}

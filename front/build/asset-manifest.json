@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ade5c6b8.css",
+    "main.js": "/static/js/main.c08402ae.js",
+    "static/media/about-2.png": "/static/media/about-2.0e5f428c1599047fc6ed.png",
+    "static/media/home-picture.png": "/static/media/home-picture.6b74c33bf747007f1f76.png",
+    "static/media/about-1.png": "/static/media/about-1.1f71dd16c703cb475334.png",
+    "static/media/product-first-section.png": "/static/media/product-first-section.b62325e14a7e6b6ea546.png",
+    "static/media/hormoneTherapy.jpg": "/static/media/hormoneTherapy.792733896b5ffdf64261.jpg",
+    "static/media/painManagement.jpeg": "/static/media/painManagement.a33e67676e14b84656d3.jpeg",
+    "static/media/dermatology.png": "/static/media/dermatology.4bf75e264e9752c7e2f8.png",
+    "static/media/veterinary.jpeg": "/static/media/veterinary.fdcc35081ad58e7e9868.jpeg",
+    "static/media/Logo.png": "/static/media/Logo.db2b0ba42b03abc8d949.png",
+    "static/media/hairLoss.jpeg": "/static/media/hairLoss.1ff0540c44069898db97.jpeg",
+    "static/media/dental.jpeg": "/static/media/dental.64419fc90798419623cd.jpeg",
+    "index.html": "/index.html",
+    "main.ade5c6b8.css.map": "/static/css/main.ade5c6b8.css.map",
+    "main.c08402ae.js.map": "/static/js/main.c08402ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ade5c6b8.css",
+    "static/js/main.c08402ae.js"
+  ]
+}

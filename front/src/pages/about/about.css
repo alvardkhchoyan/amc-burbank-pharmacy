@@ -161,68 +161,55 @@
 }
 
 .team-section {
-  margin: 50px 0;
-  padding: 0px;
-  background-color: #f7f7f7;
-  align-items: center;
-  padding: 20px;
+  margin-bottom: 4%;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 70;
-
+  background: linear-gradient(135deg, #DFCC9E, #347c57);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  width: 100%;
-  height: 100vh;
+  flex-direction: column; 
 }
 
 .team-title {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: "Arial", sans-serif;
   font-size: 56px;
   font-weight: bold;
   color: #dfcc9e;
-  margin-bottom: 60px;
-  /* margin-top: -50px; */ 
-  align-items: center;
-}
-
-.team-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,
-      minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  text-align: center; 
 }
 
 .popup-columns {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
-  margin-left: -400px;
+  margin: 0 auto;
+  flex-direction: column; 
 }
 
 .popup-item {
-  flex: 1;
+  /* flex: 1; */
   padding: 20px;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-    background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   margin-bottom: 20px;
-  border: 1px solid rgb(32, 153, 83);
-  max-width: 70%;
+  width: 100%;
+  max-width: 400px; 
+  border: 1px solid #347c57;
 }
 
 .popup-item:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   background-color: #eaf1f3;
 }
@@ -237,6 +224,7 @@
 .definitions {
   font-size: 24px;
   color: #dfcc9e;
+  text-align: center;
 }
 
 .plus-button {
@@ -245,9 +233,8 @@
   color: #347c57;
   cursor: pointer;
   transition: color 0.3s ease;
-  margin-left: 600px;
-  top: -30px;
   display: flex;
+  justify-content: center;
 }
 
 .plus-button:hover {
@@ -259,7 +246,6 @@
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
   padding: 0 10px;
-  margin-top: -30px;
 }
 
 .popup-content.open {
@@ -267,68 +253,59 @@
   padding: 10px;
 }
 
-.popup-item p {
-  font-size: 18px;
-  color: #333;
-  margin: 0;
-  flex: 1;
-}
-
-.popup-content p:last-of-type {
+.popup-item p:last-of-type {
   margin-top: auto;
 }
 
 .popup-image {
-  flex: 0.5;
   width: 45%;
   margin-left: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 768px) {
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) and (min-width: 320px) {
 
-  .first-section,
-  .second-section {
-    flex-direction: column;
-    text-align: center;
+  .team-section {
+    margin-top: 18%;
+    top: 200px;
   }
-
-  .about-1,
-  .about-2 {
-    width: 90%;
-    margin: 20px auto;
-    padding: 0;
-  }
-
-  .first-section-text-info,
-  .second-section-text-info {
-    margin: 20px auto;
-    width: 90%;
-  }
-
-  .about-us {
+  
+  .team-title {
     font-size: 36px;
+  }
+
+  .team-info {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .popup-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+  }
+
+  .popup-item {
+    width: 100%;
+    max-width: 100%; /* Make popup full width */
   }
 }
 
+/* For screens between 769px and 1024px */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-  .first-section,
-  .second-section {
-    flex-direction: column;
-    text-align: center;
+  .team-title {
+    font-size: 48px;
   }
 
-  .about-1,
-  .about-2 {
-    width: 70%;
-    margin: 20px auto;
-  }
-
-  .first-section-text-info,
-  .second-section-text-info {
+  .team-info {
     width: 80%;
-    margin: 20px auto;
+  }
+
+  .popup-item {
+    max-width: 80%;
   }
 }

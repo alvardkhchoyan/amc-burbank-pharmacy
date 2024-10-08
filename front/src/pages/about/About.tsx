@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./about.css";
-import About1 from "./about-1.png";
-import About2 from "./about-2.png";
+import About1 from "./picture/about-1.png";
+import About2 from "./picture/about-2.png";
 
 const About = () => {
   const imagesRef = useRef<HTMLDivElement | null>(null);
@@ -89,7 +89,7 @@ const About = () => {
       />
 
       <div className="team-section">
-        <h2 className="team-title" style={{marginTop: "-700px", fontSize: "58px"}}>Why Choose Us</h2>
+        <h2 className="team-title">Why Choose Us</h2>
         <div className="team-info popup-columns">
           {[
             {

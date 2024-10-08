@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from "react";
 import { ROUTES } from "../../constants/paths";
 import PhoneIcon from "./phone-icon.jpeg";
@@ -55,7 +53,7 @@ const Header: React.FC = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           />
-          <span style={{position: "relative", top: "-12px", color: "#dfcc9e", fontWeight: "lighter", cursor: "auto"}}>Burbank Pharmacy</span>
+          <span style={{position: "relative", top: "-12px", color: "#dfcc9e", fontWeight: "lighter", cursor: "auto"}} className="logo-name">Burbank Pharmacy</span>
       </a>
       <button
         className={`burger-menu ${isMenuOpen ? "open" : ""}`}

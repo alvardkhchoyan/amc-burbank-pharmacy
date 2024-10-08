@@ -215,6 +215,26 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+  .logo-name {
+    font-size: 24px; /* Smaller font size on mobile */
+  }
+
+  .header-logo {
+    width: 120px; /* Shrink the logo on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-name {
+    font-size: 20px; /* Even smaller font size for very small screens */
+  }
+
+  .header-logo {
+    width: 100px; /* Further shrink the logo */
+  }
+}
+
+@media (max-width: 768px) {
   .header-content {
     background-color: rgba(255, 255, 255, 0.7);
     position: fixed;
@@ -237,7 +257,7 @@ nav ul li a:hover {
   }
 
   .burger-menu {
-    background-color: #fcfcff;
+    background-color: #cbb083;
     display: flex;
     margin-right: 40px;
   }
@@ -254,22 +274,22 @@ nav ul li a:hover {
   }
 
   .nav.open {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(245, 242, 242, 0.7);
     display: flex;
   }
-
+  
   .nav ul {
     flex-direction: column;
     padding: 0;
     margin: 0;
     gap: 0;
   }
-
+  
   .nav-item {
     text-align: center;
     width: 100%;
   }
-
+  
   .nav ul li a {
     align-items: center;
     justify-content: center;
