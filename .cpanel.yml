@@ -1,0 +1,17 @@
+---
+deployment:
+  tasks:
+    # Frontend deployment
+    - cd frontend
+    - npm install
+    - npm run build
+    - export DEPLOYPATH=/home/amcburbank/public_html/amc-burbank-pharmacy
+    - /bin/cp -R build/* $DEPLOYPATH
+
+    # Backend deployment
+    - cd ../backend
+    - npm install
+    - export BACKENDPATH=/home/amcburbank/backend_app
+    - /bin/cp -R * $BACKENDPATH
+    - cd $BACKENDPATH
+    - node app.js # Or your backend start command
