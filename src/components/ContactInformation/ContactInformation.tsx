@@ -38,7 +38,7 @@ const ContactInformation = () => {
               rel="noopener noreferrer"
               className="contact-link">
               <img src={locationIcon} alt="Location" className="contact-icon" />{" "}
-              2625 W Alameda Ave STE110, Burbank, CA 91505, United States
+              2625 W Alameda #110, Burbank, CA
             </a>
           </div>
         </div>

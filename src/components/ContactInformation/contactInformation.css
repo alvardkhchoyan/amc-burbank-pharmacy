@@ -1,6 +1,5 @@
 .contact-information-container {
   position: relative;
-  padding: 20px;
 }
 
 .background-image-wrapper {
@@ -63,7 +62,7 @@
 }
 
 .opening-hours h3 {
-  font-size: 39px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -72,7 +71,7 @@
   color: white;
   display: flex;
   margin: 0 0 15px;
-  font-size: 16px;
+  font-size: 24px;
   justify-content: start;
 }
 
@@ -81,14 +80,13 @@
   cursor: pointer;
 }
 
-
 .social-media-contact {
   text-align: center;
   margin-top: 20px;
 }
 
 .social-media-contact h3 {
-  font-size: 39px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -119,7 +117,6 @@
   color: #dfcc9e;
 }
 
-
 @media (max-width: 1200px) {
   .contact-information {
     padding: 15px;
@@ -137,10 +134,12 @@
 }
 
 @media (max-width: 480px) {
+  .contact-information {
+    font-size: 18px;
+  }
   .contact-information-container {
-    margin-top: 15px; 
-    margin-bottom: 120px !important; 
-    font-size: 0.85rem;
+    margin-top: 15px;
+    margin-bottom: 120px !important;
   }
 
   .contact-item {
@@ -153,7 +152,8 @@
     gap: 10px;
   }
 
-  .contact-icon, .clock-icon {
+  .contact-icon,
+  .clock-icon {
     width: 18px;
     height: 18px;
   }
@@ -163,12 +163,15 @@
     height: 20px;
   }
 
+  .contact-details {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
   .contact-information-container {
     margin-bottom: 250px;
-    margin-top: 20px; 
+    margin-top: 20px;
   }
 
   .contact-information {
@@ -188,10 +191,26 @@
     width: 20px;
     height: 20px;
   }
+  a.contact-link {
+    margin-left: 12px;
+  }
 
   .instagram-icon {
     width: 25px;
     height: 25px;
   }
-}
 
+  .opening-hours p {
+    margin-left: 50px;
+  }
+
+  .social-media-link {
+    margin-left: 50px;
+  }
+  
+  .contact-details {
+    margin-left: 50px;
+    font-size: 14px;
+  }
+
+}
