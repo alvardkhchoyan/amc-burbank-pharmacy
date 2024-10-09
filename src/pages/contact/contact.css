@@ -38,10 +38,9 @@
   color: #555;
 }
 
-/* Responsive: Tablets and small laptops (1024px and below) */
 @media (max-width: 1024px) {
   .location-title {
-    font-size: 1.25rem; /* Slightly smaller title for medium screens */
+    font-size: 1.25rem;
   }
   .location-description {
     font-size: 22px; /* Adjust description size */
@@ -51,8 +50,13 @@
 
 /* Responsive: Tablets and small devices (768px and below) */
 @media (max-width: 768px) {
+  .contact-us-content {
+    background-color: #176b3c;
+    width: 400px;
+    margin-left: -60px;
+  }
   .location-section {
-    padding: 0 10px; /* Add horizontal padding for smaller devices */
+    padding: 0 10px;
   }
   .location-title {
     font-size: 1.25rem; /* Reduce title size further */
