@@ -14,7 +14,7 @@
 
 /* Title styling */
 .location-title {
-  font-size: 2rem;
+  font-size: 36px;
   color: #209953;
   margin-bottom: 20px;
   transition: color 0.3s, transform 0.3s;
@@ -27,7 +27,7 @@
 
 /* Description styling */
 .location-description {
-  font-size: 1.1rem;
+  font-size: 22px;
   color: #333;
   margin-bottom: 30px;
   transition: transform 0.3s, color 0.3s;
@@ -41,10 +41,10 @@
 /* Responsive: Tablets and small laptops (1024px and below) */
 @media (max-width: 1024px) {
   .location-title {
-    font-size: 1.75rem; /* Slightly smaller title for medium screens */
+    font-size: 1.25rem; /* Slightly smaller title for medium screens */
   }
   .location-description {
-    font-size: 1rem; /* Adjust description size */
+    font-size: 22px; /* Adjust description size */
     margin-bottom: 25px; /* Reduce bottom margin */
   }
 }
@@ -55,7 +55,7 @@
     padding: 0 10px; /* Add horizontal padding for smaller devices */
   }
   .location-title {
-    font-size: 1.5rem; /* Reduce title size further */
+    font-size: 1.25rem; /* Reduce title size further */
     margin-bottom: 15px; /* Reduce bottom margin */
   }
   .location-description {

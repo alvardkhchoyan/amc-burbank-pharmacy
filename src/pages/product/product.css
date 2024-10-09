@@ -182,7 +182,7 @@
 
   /* Responsive image styling */
   .product-image {
-    width: 80%; /* Images take up 90% of the width on mobile */
+    width: 80%; 
     max-width: 300px;
     height: auto;
   }
