@@ -171,19 +171,19 @@
   .product-sixth-section {
     flex-direction: column;
     gap: 20px;
-    align-items: center; /* Center the content for smaller screens */
+    align-items: center;
+    max-width: 80%;
   }
 
   /* Ensure text is first and centered */
   .product-text {
     text-align: center;
-    max-width: 100%;
   }
 
   /* Responsive image styling */
   .product-image {
-    width: 90%; /* Images take up 90% of the width on mobile */
-    max-width: 350px;
+    width: 80%; /* Images take up 90% of the width on mobile */
+    max-width: 300px;
     height: auto;
   }
 
