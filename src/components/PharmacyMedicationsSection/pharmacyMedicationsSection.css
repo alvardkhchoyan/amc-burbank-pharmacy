@@ -33,7 +33,7 @@
 }
 
 .medications-content p {
-  font-size: 18px;
+  font-size: 20px;
   color: #555;
   margin: 15px 0;
 }
@@ -69,16 +69,16 @@
   }
 
   .medications-content p {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .order-button {
     padding: 10px 24px;
-    font-size: 14px;
+    font-size: 22px;
   }
 
   .order-button .arrow {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .medications-image {
@@ -107,11 +107,13 @@
   }
 
   .medications-content h1 {
-    font-size: 20px;
+    font-size: 24px;
+    margin-top: -60px;
+    margin-bottom: 20px;
   }
 
   .medications-content p {
-    font-size: 14px;
+    font-size: 22px;
     margin: 10px 0;
   }
 

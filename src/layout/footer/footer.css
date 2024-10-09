@@ -188,6 +188,7 @@
 
   .footer {
     padding: 20px 50px;
+    margin-left: -10px;
   }
 }
 
