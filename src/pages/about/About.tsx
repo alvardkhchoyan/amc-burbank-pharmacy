@@ -43,13 +43,13 @@ const About = () => {
       <img src={About1} alt="About1" className="about-1" />
 
         <div className="first-section-text-info bordered-box">
-          <p>
+          <p className="aboutText">
             Our pharmacy has a long history of providing excellent health care
             services. We are dedicated to offering the best in pharmaceutical
             care to our community. Whether you need advice on your medication or
             health supplements, we are here to help.
           </p>
-          <p>
+          <p className="aboutText">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ex
             recusandae voluptatem magnam voluptatibus quo ipsa! Adipisci eveniet
             officia nostrum beatae exercitationem quis inventore expedita
@@ -64,13 +64,13 @@ const About = () => {
           <div className="about-us">Medications Developed by Our Pharmacy</div>
       <div className="second-section">
         <div className="second-section-text-info bordered-box">
-          <p>
+          <p className="aboutText">
             We have a dedicated team working tirelessly to develop new and
             effective medications. Our commitment to research and development
             ensures that we are always at the forefront of innovation, offering
             our customers the best possible care.
           </p>
-          <p>
+          <p className="aboutText">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
             debitis omnis atque veniam quasi, porro totam nihil maiores velit
             nobis. Iste, fugit! Corporis adipisci neque corrupti libero sequi
