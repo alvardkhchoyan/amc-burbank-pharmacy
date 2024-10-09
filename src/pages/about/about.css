@@ -184,6 +184,7 @@
   font-weight: bold;
   color: #dfcc9e;
   text-align: center;
+  margin-top: -30px;
 }
 
 .popup-columns {
@@ -303,6 +304,8 @@
 
   .team-title {
     font-size: 1.8rem;
+    margin-top: -30px;
+
   }
 
   .first-section-text-info .second-section-text-info {
@@ -322,5 +325,9 @@
     align-items: center;
     gap: 20px;
     margin: 0;
+  }
+
+  .team-section {
+    background-color: red;
   }
 }
