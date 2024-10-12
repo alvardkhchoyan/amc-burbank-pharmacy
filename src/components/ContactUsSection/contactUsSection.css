@@ -2,45 +2,71 @@
   text-align: center;
   padding-top: 80px;
   padding-inline: 14%;
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 30px; 
 }
 
 .contact-us-title {
   font-size: 36px;
   color: #209953;
+  margin-bottom: 48px; 
+  font-weight: bold;
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
 }
 
 .contact-us-description {
-  font-size: 22px;
+  font-size: 20px;
   color: #333;
-  margin: 10px 0 40px 0;
+  margin: 10px 12px 40px 12px;
+  line-height: 1.5; 
 }
 
 .contact-us-content {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  align-items: flex-start; 
+}
+
+.contact-text {
+  margin-top: 120px;
+  opacity: 0; 
+  transform: translateX(-20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.fade-in {
+  opacity: 1; 
+  transform: translateX(0); 
 }
 
 @media (max-width: 768px) {
   .contact-us-section {
     padding: 60px 10%;
   }
-  
+
   .contact-us-content {
     flex-direction: column; 
     align-items: center;
   }
-
 }
 
 @media (max-width: 480px) {
-
+  .contact-text {
+    margin-top: 4px;
+  }
   .contact-us-title {
-    font-size: 1.5rem !important; 
+    font-size: 1.2rem !important; 
     padding: 10px;
+    color: #dfcc9e;
+    margin-bottom: 22px;
   }
 
   .contact-us-description {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
+    color: white;
   }
 }

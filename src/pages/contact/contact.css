@@ -12,7 +12,6 @@
   animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Title styling */
 .location-title {
   font-size: 36px;
   color: #209953;
@@ -25,7 +24,6 @@
   transform: translateY(-5px);
 }
 
-/* Description styling */
 .location-description {
   font-size: 22px;
   color: #333;
@@ -43,12 +41,11 @@
     font-size: 1.25rem;
   }
   .location-description {
-    font-size: 22px; /* Adjust description size */
-    margin-bottom: 25px; /* Reduce bottom margin */
+    font-size: 22px; 
+    margin-bottom: 25px; 
   }
 }
 
-/* Responsive: Tablets and small devices (768px and below) */
 @media (max-width: 768px) {
   .contact-us-content {
     background-color: #176b3c;
@@ -59,23 +56,22 @@
     padding: 0 10px;
   }
   .location-title {
-    font-size: 1.25rem; /* Reduce title size further */
-    margin-bottom: 15px; /* Reduce bottom margin */
+    font-size: 1.25rem; 
+    margin-bottom: 15px; 
   }
   .location-description {
-    font-size: 0.95rem; /* Smaller font for descriptions */
+    font-size: 0.95rem; 
     margin-bottom: 20px;
   }
 }
 
-/* Responsive: Mobile devices (480px and below) */
 @media (max-width: 480px) {
   .location-title {
-    font-size: 1.25rem; /* Smaller font for mobile */
+    font-size: 1.25rem; 
     margin-bottom: 10px;
   }
   .location-description {
-    font-size: 0.85rem; /* Adjust description size for mobile */
+    font-size: 0.85rem; 
     margin-bottom: 15px;
   }
 }

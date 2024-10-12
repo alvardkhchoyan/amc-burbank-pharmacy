@@ -5,6 +5,7 @@ import emailIcon from "../../icon/email.png";
 import locationIcon from "../../icon/location.png";
 import clockIcon from "../../icon/clock.png";
 import instagramLogo from "../../assets/instagramLogo.png";
+import tiktokLogo from "../../assets/TikTokLogo.png"
 
 const ContactInformation = () => {
   return (
@@ -67,6 +68,18 @@ const ContactInformation = () => {
                 className="instagram-icon"
               />
               <span className="instagram-text">Follow Us on Instagram</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@amc.burbank.pharmacy?_t=8q7qms7W3cN&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="tiktok-link">
+              <img
+                src={tiktokLogo}
+                alt="tiktok"
+                className="tiktok-icon"
+              />
+              <span className="tiktok-text">Follow Us on TikTok</span>
             </a>
           </div>
         </div>
