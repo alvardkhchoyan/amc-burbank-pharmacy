@@ -339,6 +339,7 @@
 @media (max-width: 768px) {
   .video {
     display: block; /* Ensure the video is visible */
-    opacity: 1; /* Ensure opacity is set correctly */
+    opacity: 1; 
+    width: 60%;
   }
 }
