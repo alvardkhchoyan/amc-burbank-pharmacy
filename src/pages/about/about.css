@@ -100,7 +100,7 @@
   transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
 
-.about-1 {
+.video {
   margin: 0 80px;
   padding: 20px;
   width: 15%;
@@ -329,5 +329,16 @@
 
   .team-section {
     background-color: red;
+  }
+  .video {
+    display: block; /* Ensure the video is visible */
+    opacity: 1; /* Ensure opacity is set correctly */
+  }
+}
+
+@media (max-width: 768px) {
+  .video {
+    display: block; /* Ensure the video is visible */
+    opacity: 1; /* Ensure opacity is set correctly */
   }
 }
