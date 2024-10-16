@@ -6,6 +6,7 @@ import Dental from "./images/dental.jpeg";
 import HormoneTherapy from "./images/hormoneTherapy.jpg";
 import PainManagement from "./images/painManagement.jpeg";
 import Veterinary from "./images/veterinary.jpeg";
+import Vaccines from "./images/vaccines.png";
 
 const Compounding: React.FC = () => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
@@ -108,6 +109,27 @@ const Compounding: React.FC = () => {
             </ul>
           </div>
         );
+      case "Vaccines":
+        return (
+          <div>
+            <h2>Vaccines</h2>
+            <ul>
+              <li>
+                At AMC Burbank Pharmacy, your health is our priority. We’re
+                proud to offer a variety of vaccines to help keep you and your
+                community safe. Our experienced team provides convenient,
+                friendly service in a welcoming environment. Whether you need a
+                flu shot, COVID-19 vaccine, or any other immunization, we’re
+                here to assist you.
+              </li>
+              <li>
+                Call us today to arrange an appointment or to request more
+                information on vaccines. Protect yourself and your loved
+                ones—because health matters!
+              </li>
+            </ul>
+          </div>
+        );
       default:
         return null;
     }
@@ -161,6 +183,11 @@ const Compounding: React.FC = () => {
           <img src={Veterinary} alt="Veterinary" />
           <p>Veterinary</p>
           <button onClick={() => openPopup("Veterinary")}>LEARN MORE</button>
+        </div>
+        <div className="product-item">
+          <img src={Vaccines} alt="Vaccines" />
+          <p>Vaccines</p>
+          <button onClick={() => openPopup("Vaccines")}>LEARN MORE</button>
         </div>
       </div>
 

@@ -18,7 +18,8 @@
   text-transform: uppercase;
   opacity: 0;
   animation: fadeInUp 1s ease-in-out forwards; /* Slide in from bottom */
-  animation-delay: 0.2s; /* Slight delay */
+  animation-delay: 0.2s; 
+  top: 30px;
 }
 
 .product-grid {
@@ -94,9 +95,24 @@ button:hover {
   background-color: #cbb083;
 }
 
+.popup {
+  background: linear-gradient(135deg, #dcdcdc, #f8f8f8);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%; /* Changed from fixed width to responsive */
+  max-width: 600px; /* Maintains a maximum width */
+  text-align: center;
+  color: #347c57;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+  animation-delay: 0.2s;
+  margin-bottom: 80px;
+}
+
 .popup-overlay {
   position: fixed;
-  top: 0;
+  top: 80px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -106,19 +122,9 @@ button:hover {
   align-items: center;
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
-}
+  overflow-y: auto; 
+  margin-bottom: 80px;
 
-.popup {
-  background: linear-gradient(135deg, #dcdcdc, #f8f8f8);
-  padding: 30px;
-  border-radius: 10px;
-  width: 600px;
-  text-align: center;
-  color: #347c57;
-  font-weight: bold;
-  opacity: 0;
-  animation: fadeInUp 0.5s ease forwards;
-  animation-delay: 0.2s;
 }
 
 .popup button {
@@ -150,6 +156,125 @@ button:hover {
   animation-delay: 0.7s;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    width: 90%; /* Responsive width */
+    padding: 20px;
+  }
+  
+  .additional-info {
+    font-size: 18px; 
+    padding: 15px;
+  }
+}
+
+
+/* Popup styling */
+.popup {
+  background: linear-gradient(135deg, #dcdcdc, #f8f8f8);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  color: #347c57;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+  animation-delay: 0.2s;
+  margin-bottom: 80px;
+  overflow-y: auto; /* Allow content scrolling inside popup */
+  max-height: 80vh; /* Limit height for responsiveness */
+}
+
+/* Popup overlay covers the full screen and prevents background interaction */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  z-index: 999; /* Ensure the popup is on top */
+}
+
+/* Lock scrolling of the body when popup is open */
+body.popup-active {
+  overflow: hidden;
+}
+
+/* Adjust button within popup */
+.popup button {
+  background-color: #347c57;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 6px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Additional Info Section */
+.additional-info {
+  font-size: 22px;
+  color: #344e41;
+  line-height: 1.8;
+  font-weight: 400;
+  max-width: 100%;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.7s;
+}
+
+/* Media Queries for Responsive Layout */
+@media screen and (max-width: 768px) {
+  .popup {
+    margin-top: 140px;
+    width: 90%; 
+    padding: 20px;
+    max-height: 70vh; 
+  }
+  
+  .additional-info {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 15px;
+  }
+}
+
+/* Fade in animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
