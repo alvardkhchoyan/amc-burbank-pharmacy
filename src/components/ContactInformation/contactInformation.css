@@ -199,6 +199,7 @@
   .contact-details {
     font-size: 16px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -206,7 +207,7 @@
     margin-bottom: 250px;
     margin-top: 20px;
   }
-
+  
   .contact-information {
     padding: 15px;
   }

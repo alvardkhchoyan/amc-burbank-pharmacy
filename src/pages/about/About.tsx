@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./about.css";
 import About1 from "./picture/about-1.png";
 import About2 from "./picture/about-2.png";
+import AboutVideo from "./video-for-about.mp4";
 
 const About = () => {
   const imagesRef = useRef<HTMLDivElement | null>(null);
