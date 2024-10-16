@@ -40,6 +40,11 @@ const ProductSection: React.FC = () => {
       description: "Juzo Power Socks provide superior compression and comfort for enhanced circulation and all-day support.",
       imageUrl: "./images/product3.png",
     },
+    {
+      title: "Vaccines",
+      description: "We're proud to offer a variety of vaccines to help keep you and your community safe.",
+      imageUrl: "./images/vaccines.png",
+    }
   ];
 
   return (

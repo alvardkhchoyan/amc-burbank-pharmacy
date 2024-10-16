@@ -6,6 +6,7 @@ import locationIcon from "../../icon/location.png";
 import clockIcon from "../../icon/clock.png";
 import instagramLogo from "../../assets/instagramLogo.png";
 import tiktokLogo from "../../assets/TikTokLogo.png"
+import faxIcon from "./fax.png";
 
 const ContactInformation = () => {
   return (
@@ -80,6 +81,20 @@ const ContactInformation = () => {
                 className="tiktok-icon"
               />
               <span className="tiktok-text">Follow Us on TikTok</span>
+            </a>
+          </div>
+          <h3>Fax Number</h3>
+          <div className="social-media-link">
+          <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="instagram-link">
+              <img
+                src={faxIcon}
+                alt="Instagram"
+                className="instagram-icon"
+              />
+              <span className="instagram-text">(818) 864-0018</span>
             </a>
           </div>
         </div>
