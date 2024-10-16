@@ -42,7 +42,7 @@ const About = () => {
       <div className="about-us">Consulting at AMC Burbank Pharmacy</div>
       <div className="first-section">
         {/* <img src={About1} alt="About1" className="about-1" /> */}
-        <video width="600" autoPlay muted loop className="about-1">
+        <video autoPlay muted loop className="about-1">
           <source src={AboutVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
