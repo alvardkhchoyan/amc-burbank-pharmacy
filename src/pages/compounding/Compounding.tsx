@@ -184,11 +184,6 @@ const Compounding: React.FC = () => {
           <p>Veterinary</p>
           <button onClick={() => openPopup("Veterinary")}>LEARN MORE</button>
         </div>
-        <div className="product-item">
-          <img src={Vaccines} alt="Vaccines" />
-          <p>Vaccines</p>
-          <button onClick={() => openPopup("Vaccines")}>LEARN MORE</button>
-        </div>
       </div>
 
       {selectedProduct && (
