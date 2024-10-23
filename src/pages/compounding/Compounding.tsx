@@ -141,12 +141,16 @@ const Compounding: React.FC = () => {
       <div className="additional-info">
         <p>
           For detailed information on specific medications, treatments, and
-          protocols, you can sign up for access. Explore tailored solutions for
-          specific medical needs through our compounding services. Whether
-          you're seeking treatments for dermatology, dental care, hormone
-          therapy, or hair loss, we provide customized medication solutions to
-          fit your requirements. For full access to protocols, treatments, and
-          detailed medication information, please sign up.
+          protocols, you will soon be able to sign up for access. We’re excited
+          to announce that a registration page is coming soon, giving you the
+          opportunity to explore tailored solutions for your unique medical
+          needs through our compounding services.
+          <br />
+          Whether you're seeking treatments for dermatology, dental care,
+          hormone therapy, or hair loss, we provide customized medication
+          solutions to fit your requirements. Stay tuned for updates, and be
+          ready to join us for exclusive access to personalized care that caters
+          to your specific health and wellness goals.
         </p>
       </div>
       <div className="product-grid">
