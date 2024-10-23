@@ -1,5 +1,5 @@
 import instagramLogo from "../../assets/instagramLogo.png";
-import TikTokLogo from "../../assets/TikTokLogo.png"
+import TikTokLogo from "../../assets/TikTokLogo.png";
 import locationIcon from "./../../icon/location.png";
 import phoneIcon from "./../../icon/phone.png";
 import emailIcon from "./../../icon/email.png";
@@ -47,12 +47,15 @@ const Footer: React.FC = () => {
           <h3>Contact Info</h3>
           <div className="contact-item">
             <a href="tel:+18188416326" className="contact-link">
-              <img src={phoneIcon} alt="Phone" className="contact-icon" /> +1
-              818 841 6326
+              <img src={phoneIcon} alt="Phone" className="contact-icon" /> + 1
+              (818) 478-1585
             </a>
           </div>
           <div className="contact-item">
-            <a href="mailto:Amcburbankpharmacy@yahoo.com" className="contact-link">
+            <a
+              href="mailto:Amcburbankpharmacy@yahoo.com"
+              className="contact-link"
+            >
               <img src={emailIcon} alt="Email" className="contact-icon" />{" "}
               Amcburbankpharmacy@yahoo.com
             </a>

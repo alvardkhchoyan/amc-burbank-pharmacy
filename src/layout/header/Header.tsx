@@ -77,7 +77,7 @@ const Header: React.FC = () => {
           <li>
             <a href="tel:" className="call-section">
               <img src={PhoneIcon} alt="phone-icon" className="phone-icon" />
-              + 1 (818) 841-6326
+              + 1 (818) 478-1585
             </a>
           </li>
           <li className="nav-item">
