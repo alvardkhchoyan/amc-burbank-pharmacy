@@ -24,6 +24,12 @@ const ContactInformation = () => {
           <div className="contact-item">
             <a href="tel:+18188416326" className="contact-link">
               <img src={phoneIcon} alt="Phone" className="contact-icon" /> + 1
+              (818) 841-6362
+            </a>
+          </div>
+          <div className="contact-item">
+            <a href="tel:+18188416326" className="contact-link">
+              <img src={phoneIcon} alt="Phone" className="contact-icon" /> + 1
               (818) 478-1585
             </a>
           </div>

@@ -10,8 +10,8 @@ const Landing: React.FC = () => {
     <div className="landing-container">
       <FirstSection />
       <ProductSection />
-      <TeleConsult />
       <PharmacyMedicationsSection />
+      <TeleConsult />
     </div>
   );
 };

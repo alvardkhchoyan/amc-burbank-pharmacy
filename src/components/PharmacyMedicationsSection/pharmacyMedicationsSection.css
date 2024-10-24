@@ -1,4 +1,5 @@
 .pharmacy-medications-section {
+  margin-top: 80px;
   padding-inline: 60px;
   padding-block: 0px;
   border-radius: 16px;
@@ -15,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .medications-content {
@@ -40,14 +41,18 @@
 
 .medications-image {
   padding: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .medications-image img {
   max-width: 100%;
   height: auto;
   border-radius: 16px;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .pharmacy-medications-section {
     padding-inline: 30px;
@@ -65,24 +70,11 @@
   }
 
   .medications-content h1 {
-    font-size: 32px; 
+    font-size: 32px;
   }
 
   .medications-content p {
     font-size: 22px;
-  }
-
-  .order-button {
-    padding: 10px 24px;
-    font-size: 22px;
-  }
-
-  .order-button .arrow {
-    font-size: 22px;
-  }
-
-  .medications-image {
-    padding: 10px;
   }
 
   .medications-image img {
@@ -115,20 +107,6 @@
   .medications-content p {
     font-size: 22px;
     margin: 10px 0;
-  }
-
-  .order-button {
-    padding: 8px 20px;
-    font-size: 12px;
-  }
-
-  .order-button .arrow {
-    font-size: 18px;
-  }
-
-  .medications-image {
-    padding: 0;
-    margin-top: 15px;
   }
 
   .medications-image img {

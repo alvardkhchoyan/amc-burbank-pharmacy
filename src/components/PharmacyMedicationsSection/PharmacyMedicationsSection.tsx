@@ -5,21 +5,7 @@ import Vaccines from "./vaccines.png";
 const PharmacyMedicationsSection: React.FC = () => {
   return (
     <section className="pharmacy-medications-section">
-      <div className="medications">
-        <div className="medications-content">
-          <h1>Exclusive Medications Developed by AMC</h1>
-          <p>
-            Exclusive Medications Developed by AMC are meticulously crafted and
-            processed with the highest standards of quality and care. Our
-            pharmacy is dedicated to producing effective, reliable medications
-            that meet rigorous safety and efficacy standards, ensuring optimal
-            health outcomes for our patients.
-          </p>
-        </div>
-        <div className="medications-image">
-          <img src="./images/ourMedicines.png" alt="Pharmacy's Medicines" />
-        </div>
-      </div>
+
       <div className="medications">
         <div className="medications-image">
           <img src={Vaccines} alt="Vaccines" width="450px" />
@@ -39,6 +25,21 @@ const PharmacyMedicationsSection: React.FC = () => {
             ones—because health matters!
           </p>
         </div>
+        <div className="medications">
+        <div className="medications-content" style={{marginTop: "60px"}}>
+          <h1>Exclusive Medications Developed by AMC</h1>
+          <p>
+            Exclusive Medications Developed by AMC are meticulously crafted and
+            processed with the highest standards of quality and care. Our
+            pharmacy is dedicated to producing effective, reliable medications
+            that meet rigorous safety and efficacy standards, ensuring optimal
+            health outcomes for our patients.
+          </p>
+        </div>
+        <div className="medications-image">
+          <img src="./images/ourMedicines.png" alt="Pharmacy's Medicines" />
+        </div>
+      </div>
       </div>
     </section>
   );

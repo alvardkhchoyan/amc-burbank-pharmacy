@@ -48,9 +48,15 @@ const Footer: React.FC = () => {
           <div className="contact-item">
             <a href="tel:+18188416326" className="contact-link">
               <img src={phoneIcon} alt="Phone" className="contact-icon" /> + 1
-              (818) 478-1585
+              (818) 841-6326
             </a>
           </div>
+          <div  className="contact-item">
+            <a href="tel:+18188416326" className="contact-link">
+              <img src={phoneIcon} alt="Phone" className="contact-icon" /> + 1
+              (818) 478-1585
+            </a>
+            </div>
           <div className="contact-item">
             <a
               href="mailto:Amcburbankpharmacy@yahoo.com"
