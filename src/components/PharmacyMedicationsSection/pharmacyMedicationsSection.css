@@ -113,3 +113,38 @@
     max-width: 90%;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pharmacy-medications-section {
+    padding-inline: 40px;
+    padding-block: 50px;
+  }
+
+  .medications {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .medications-content {
+    max-width: 70%;
+    padding: 15px;
+  }
+
+  .medications-content h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .medications-content p {
+    font-size: 18px;
+  }
+
+  .medications-image {
+    padding: 15px;
+  }
+
+  .medications-image img {
+    max-width: 85%;
+    border-radius: 12px;
+  }
+}
