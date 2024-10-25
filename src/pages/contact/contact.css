@@ -75,3 +75,18 @@
     margin-bottom: 15px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .location-section {
+    margin-top: 20px;
+    padding: 0 20px; 
+  }
+
+  .location-title {
+    font-size: 2rem; 
+  }
+
+  .location-description {
+    font-size: 1.1rem; 
+}
+}

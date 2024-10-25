@@ -248,3 +248,38 @@
   }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-information-container {
+    margin: 10px; 
+  }
+
+  .contact-information {
+    padding: 15px; 
+  }
+
+  .contact-details {
+    margin-top: 15px; 
+  }
+
+  .contact-item {
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 10px; 
+  }
+
+  .opening-hours h3,
+  .social-media-contact h3 {
+    font-size: 1.5rem; 
+  }
+
+  .contact-link {
+    font-size: 1rem; 
+  }
+
+  .instagram-icon,
+  .tiktok-icon {
+    width: 25px; 
+    height: 25px;
+  }
+}

@@ -343,3 +343,69 @@
     width: 60%;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .first-section,
+  .second-section {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-inline: 20px;
+  }
+
+  .pharmacy-photo {
+    width: 40%;
+    height: auto;
+    margin: 20px;
+    transform: translateY(15px);
+  }
+
+  .about-1,
+  .about-2 {
+    width: 70%;
+    margin: 20px 0;
+  }
+
+  .about-us {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+
+  .team-title {
+    font-size: 3rem;
+    margin-top: 150px;
+  }
+
+  .team-info {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-inline: 20px;
+  }
+
+  .popup-item {
+    max-width: 350px;
+    margin: 10px auto;
+  }
+
+  .video {
+    width: 50%;
+    padding: 15px;
+    margin-inline: 10px;
+  }
+
+  .location-section {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .map-container {
+    height: 400px;
+    margin: 10px auto;
+  }
+
+  .team-section {
+    margin-bottom: 3%;
+    padding: 20px;
+    height: auto;
+  }
+}

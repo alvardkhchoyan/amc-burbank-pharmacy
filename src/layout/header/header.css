@@ -216,21 +216,21 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
   .logo-name {
-    font-size: 24px; /* Smaller font size on mobile */
+    font-size: 24px;
   }
 
   .header-logo {
-    width: 120px; /* Shrink the logo on smaller screens */
+    width: 120px; 
   }
 }
 
 @media (max-width: 480px) {
   .logo-name {
-    font-size: 20px; /* Even smaller font size for very small screens */
+    font-size: 20px; 
   }
 
   .header-logo {
-    width: 100px; /* Further shrink the logo */
+    width: 100px; 
   }
 }
 
@@ -310,5 +310,71 @@ nav ul li a:hover {
     font-weight: normal;
     text-transform: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-content {
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 70px;
+  }
+
+  .header-logo {
+    width: 100px;
+    margin-left: 15px;
+  }
+
+  .logo-name {
+    font-size: 24px; 
+  }
+
+  .burger-menu {
+    background-color: #cbb083;
+    display: flex;
+    margin-right: 30px;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .nav-item {
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav ul li a {
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .call-section {
+    padding-left: 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-us-btn {
+    padding: 10px 25px;
+    font-size: 16px;
   }
 }
